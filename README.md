@@ -7,3 +7,4 @@ This application is my attempt of Bootstraping a Razor Page,With AngularJs and T
 ###  features(to be added)
 * AngularUI Routing
 * Services
+* Directives
