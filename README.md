@@ -4,6 +4,6 @@ A lot of .NETMVC and Razor legacy Enterprise Applications run on Angular js with
 
 This application is my attempt of Bootstraping a Razor Page,With AngularJs and Typescript.
 
-### features(to be added)
-*AngularUI Routing
-*Services
+###  features(to be added)
+* AngularUI Routing
+* Services
