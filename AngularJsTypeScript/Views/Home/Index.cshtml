@@ -1,0 +1,81 @@
+﻿
+
+@{ 
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en" ng-app="TestApp">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - AngularJsTypeScript</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+    <script src="~/lib/angular.min.js"></script>
+    <script src="~/lib/angular-route.min.js"></script>
+    <script src="~/lib/angular-resource.min.js"></script>
+    <script src="~/lib/angular-ui-router.min.js"></script>
+    @*<script src="~/lib/ui-router-angularjs.min.js"></script>*@
+    <script src="~/lib/angular-mocks.js"></script>
+    <!-- Domain Classes -->
+    <script src="~/app/Model/Product.js"></script>
+    <script src="~/app/app.js"></script>
+
+    <!-- Services -->
+    <script src="~/app/common/services/common.services.js"></script>
+    <script src="~/app/common/services/productResourceMock.js"></script>
+    <script src="~/app/common/services/dataAccessService.js"></script>
+
+    <!-- Controllers -->
+    @* <script src="~/app/controller/TestCtrl.js"></script>*@
+    <script src="~/app/controller/TestCtrl.js"></script>
+    <script src="~/app/controller/productListCtrl.js"></script>
+    <script src="~/app/controller/ProductDetailCtrl.js"></script>
+
+    @*<script src=""*@
+
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+            <div class="container">
+                <a class="navbar-brand" asp-area="" asp-page="/Index">AngularJsTypeScript</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" ui-sref="productList">Home</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+       @* <main role="main" class="pb-3">*@
+
+            <ui-view></ui-view>
+            @*<ng-view></ng-view>*@
+
+      @*  </main>*@
+    </div>
+
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2021 - AngularJsTypeScript - <a asp-area="" asp-page="/Privacy">Privacy</a>
+        </div>
+    </footer>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
+</body>
+</html>
+
+

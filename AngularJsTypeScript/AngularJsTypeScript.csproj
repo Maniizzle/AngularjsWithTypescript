@@ -13,7 +13,11 @@
 
   <ItemGroup>
     <None Remove="Script\app.ts" />
+    <None Remove="Script\common\services\common.services.ts" />
+    <None Remove="Script\common\services\dataAccessService.ts" />
+    <None Remove="Script\common\services\productResourceMock.ts" />
     <None Remove="Script\controller\testCtrl.ts" />
+    <None Remove="Script\Model\Product.ts" />
   </ItemGroup>
 
   <ItemGroup>
@@ -3553,6 +3557,7 @@
     <None Include="node_modules\yargs\LICENSE" />
     <None Include="node_modules\yargs\README.md" />
     <None Include="node_modules\yargs\yargs.js" />
+    <None Include="Pages\Index.cshtml" />
     <None Include="wwwroot\lib\angular.js" />
     <None Include="wwwroot\lib\angular.min.js" />
     <None Include="wwwroot\lib\angular.min.js.gzip" />
@@ -3562,6 +3567,10 @@
   <ItemGroup>
     <PackageReference Include="angularjs" Version="1.8.2" />
     <PackageReference Include="Microsoft.AspNetCore.StaticFiles" Version="2.2.0" />
+    <PackageReference Include="Microsoft.TypeScript.MSBuild" Version="4.2.4">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
   </ItemGroup>
 
   <ItemGroup>
@@ -3773,7 +3782,20 @@
     <TypeScriptCompile Include="node_modules\slash\index.d.ts" />
     <TypeScriptCompile Include="node_modules\upath\upath.d.ts" />
     <TypeScriptCompile Include="Script\app.ts" />
+    <TypeScriptCompile Include="Script\common\services\common.services.ts" />
+    <TypeScriptCompile Include="Script\common\services\dataAccessService.ts" />
+    <TypeScriptCompile Include="Script\common\services\productResourceMock.ts" />
     <TypeScriptCompile Include="Script\controller\TestCtrl.ts" />
+    <TypeScriptCompile Include="Script\Model\Product.ts" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Template\productDetailView.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Template\productListView.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
 
 </Project>

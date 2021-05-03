@@ -1,3 +1,4 @@
+//typescript module is like a namespace
 var app;
 (function (app) {
     var productDetail;

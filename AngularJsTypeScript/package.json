@@ -3,11 +3,20 @@
   "name": "asp.net",
   "private": true,
   "devDependencies": {
-    "gulp": "4.0.2",
-    "del": "5.1.0"
+    "del": "5.1.0",
+    "gulp": "4.0.2"
   },
   "dependencies": {
     "@types/angular": "^1.8.1",
-    "angular": "^1.8.2"
+    "@types/angular-mocks": "^1.7.0",
+    "@types/angular-resource": "^1.5.16",
+    "@types/angular-route": "^1.7.1",
+    "@types/angular-ui-router": "^1.1.40",
+    "@uirouter/angularjs": "^1.0.29",
+    "angular": "^1.8.2",
+    "angular-mocks": "^1.8.2",
+    "angular-resource": "^1.8.2",
+    "angular-route": "^1.8.2",
+    "angular-ui-router": "^1.0.29"
   }
 }

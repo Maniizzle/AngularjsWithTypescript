@@ -1,4 +1,5 @@
-﻿module app.productDetail {
+﻿//typescript module is like a namespace
+module app.productDetail {
 	interface IProductDetailModel {
 		title: string;
 	}
